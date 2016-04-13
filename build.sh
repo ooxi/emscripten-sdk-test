@@ -2,13 +2,7 @@
 
 
 sudo apt-get update
-sudo apt-get install -y emscripten
+sudo apt-get install -y docker.io
 
-mkdir build
-cd build
-cmake -DCMAKE_TOOLCHAIN_FILE=/usr/share/emscripten/cmake/Platform/Emscripten.cmake ..
-make
-make
-ls -la
-cat hello-world
+docker pull thewtex/cross-compiler-browser-asmjs
 
