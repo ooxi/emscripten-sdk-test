@@ -10,4 +10,5 @@ cmake -DCMAKE_TOOLCHAIN_FILE=/usr/share/emscripten/cmake/Platform/Emscripten.cma
 make
 make
 ls -la
+cat hello-world
 
