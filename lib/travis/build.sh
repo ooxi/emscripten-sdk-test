@@ -19,7 +19,8 @@ sudo apt-get install -y nodejs
 nodejs build/hello-world.js
 
 # Deploy
-BINTRAY_VERSION="${TRAVIS_BUILD_NUMBER}"
+#BINTRAY_VERSION="${TRAVIS_BUILD_NUMBER}"
+BINTRAY_VERSION="latest"
 BINTRAY_DIRECTORY="emscripten-sdk-test/${TRAVIS_BRANCH}"
 BINTRAY_FILE="hello-world.js"
 
