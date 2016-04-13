@@ -11,3 +11,6 @@ echo "Will use \`${SOURCE_DIRECTORY}' as source and \`${TRAVIS_DIRECTORY}\' as t
 docker pull thewtex/cross-compiler-browser-asmjs
 docker run --rm -it -v $SOURCE_DIRECTORY:/usr/src:rw -v $TRAVIS_DIRECTORY:/travis:ro thewtex/cross-compiler-browser-asmjs /travis/compile-inside-docker.sh
 
+find .
+nodejs build/hello-world.js
+
