@@ -5,5 +5,5 @@ services:
   - docker
 
 script:
-  - ./build.sh
+  - ./lib/travis/build.sh emscripten
 
