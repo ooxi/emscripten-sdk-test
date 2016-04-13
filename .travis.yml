@@ -1,7 +1,7 @@
 language: cpp
 
 script:
-  - cmake -DCMAKE_TOOLCHAIN_FILE='lib/emscripten-sdk/emscripten/master/cmake/Modules/Platform/Emscripten.cmake .
+  - cmake -DCMAKE_TOOLCHAIN_FILE=lib/emscripten-sdk/emscripten/master/cmake/Modules/Platform/Emscripten.cmake .
   - make
   - ./hello-world
 
