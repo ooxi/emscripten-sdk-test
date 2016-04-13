@@ -1,8 +1,8 @@
 language: cpp
 
 script:
-  - export LLVM_ROOT=lib/emscripten-sdk/clang/fastcomp/build_master_64/bin
-  - export NODE_JS=lib/emscripten-sdk/node/4.1.1_64bit/bin/node
+  - export LLVM=lib/emscripten-sdk/clang/fastcomp/build_master_64/bin
+  - export NODE=lib/emscripten-sdk/node/4.1.1_64bit/bin/node
   - cmake -DCMAKE_TOOLCHAIN_FILE=lib/emscripten-sdk/emscripten/master/cmake/Modules/Platform/Emscripten.cmake .
   - make
   - cat /home/travis/.emscripten
