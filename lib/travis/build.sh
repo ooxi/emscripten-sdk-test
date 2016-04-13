@@ -23,7 +23,7 @@ BINTRAY_VERSION="${TRAVIS_BUILD_NUMBER}"
 BINTRAY_DIRECTORY="emscripten-sdk-test/${TRAVIS_BRANCH}"
 BINTRAY_FILE="hello-world.js"
 
-BINTRAY_RESPONSE=`curl -T "build/hello-world.js" "-u${BINTRAY_AUTHORIZATION}" "https://api.bintray.com/content/ooxi/generic/emscripten-sdk-test/${BINTRAY_VERSION}/${BINTRAY_DIRECTORY}/${BINTRAY_FILE}?publish=1"`
+BINTRAY_RESPONSE=`curl -T "build/hello-world.js" "-u${BINTRAY_AUTHORIZATION}" "https://api.bintray.com/content/ooxi/generic/emscripten-sdk-test/${BINTRAY_VERSION}/${BINTRAY_DIRECTORY}/${BINTRAY_FILE}?publish=1?override=1"`
 
 if [ '{"message":"success"}' == "${BINTRAY_RESPONSE}" ]; then
 	echo "Artifact published at https://dl.bintray.com/ooxi/generic/${BINTRAY_DIRECTORY}/${BINTRAY_FILE}"
