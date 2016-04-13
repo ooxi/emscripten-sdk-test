@@ -1,6 +1,10 @@
 sudo: required 
 dist: trusty
 
+env:
+  global:
+    secure: "tPg4vfU0MJKcvK0AWYUWxQ98WzdEcmOUNzAtAYalHTqwrkKBjPwmMJGtOw7DZ5aTy9X1zIsjwnQPQldjkmFI+Rq/VFV1po3GZaD7WJCA66bbptYozgJnpL5KUMt799h5bXz9U1UXt9gwq+NKsmtbuvxIB+V9Gzr6wMWYzR4DfsE3lR/4BkBwIHs5mwE+K3mtgp5ijrOPZ9te6w9ppS/r+o2wZK+ILuMJO/kUlxcTouulN3MERK9TC/JjdkbFdVz/x0b9zNRU+6FkuKziTfdQCXyBjfk7Bs1Tw0Dz+IYp3UglAuaygZflO151u29X0i9TPuQXUs420OT76pEB0cz5jbK8SBnBQKlriLwY3OHk8FptAZjdRkzCoBsph+2J8WRsCd/tQ6S5ft3tY4IKqBP/XoLop+iIgKrk0FA5lLG+Edkk3ENBoOoPk4cuXrfhB+ABn56xOxa0Hn9A/dFQcoyImpdU01cFlyesgVykti7kM1IoX7HsdAEt5T1GA+US/L/OiL+dIztOb0FzMppD6lwO0nA9M3cdzSwmVTJMxmnWSJletjNp25m6zI6EwseSKSV23IpehBn1RGnlXBc6nrKdZrD1O3onHXFuCPSfKnGlgOLpO6xZ+yCTHOyA6lPfGk7pHYyXfKmmlhaF1KSh0oqstSRdbnrU9G1Jyg7XBj/aylY="
+
 services:
   - docker
 
