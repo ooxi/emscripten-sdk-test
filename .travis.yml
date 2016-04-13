@@ -1,4 +1,5 @@
 language: cpp
+sudo: required 
 
 script:
   - export LLVM=lib/emscripten-sdk/clang/fastcomp/build_master_64/bin
