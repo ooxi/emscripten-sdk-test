@@ -7,5 +7,5 @@ sudo apt-get install -y docker.io
 mkdir build
 
 docker pull thewtex/cross-compiler-browser-asmjs
-docker run --rm -it -v .:ro -v ./build:rw thewtex/cross-compiler-browser-asmjs /bin/ls -la
+docker run --rm -it -v .:/usr/src/input:ro -v ./build:/usr/src/output:rw thewtex/cross-compiler-browser-asmjs /usr/bin/find .
 
