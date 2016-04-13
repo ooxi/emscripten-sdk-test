@@ -18,3 +18,15 @@ docker run --rm -it -v $SOURCE_DIRECTORY:/usr/src:rw -v $TRAVIS_DIRECTORY:/travi
 sudo apt-get install -y nodejs
 nodejs build/hello-world.js
 
+# Deploy
+BINTRAY_VERSION="current"
+
+BINTRAY_RESPONSE=`curl -T "build/hello-world.js" "-u${BINTRAY_AUTHORIZATION}" "https://api.bintray.com/content/ooxi/generic/emscripten-sdk-test/${BINTRAY_VERSION}/hello-world.js?publish=1"`
+
+if [ '{"message":"success"}' == "${BINTRAY_RESPONSE}" ]; then
+	echo "Artifact published at https://dl.bintray.com/ooxi/generic/"
+else
+	echo "Depolyment to Bintray failed with response ${BINTRAY_RESPONSE}"
+	exit 1
+fi
+
