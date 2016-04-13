@@ -1,0 +1,3 @@
+[submodule "lib/emscripten-sdk"]
+	path = lib/emscripten-sdk
+	url = https://github.com/ooxi/emscripten-sdk.git
